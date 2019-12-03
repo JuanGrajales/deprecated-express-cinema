@@ -20,28 +20,7 @@
 
 </div>
 
-<div class="table">
-{{#each theMovies}}
 
-  <ul> 
-    <a href="/movies/{{this._id}}">
-      <h3>
-        Title:
-        {{this.title}}
-      </h3>
-    </a>
-
-    <h5>By: {{this.director}}</h5>
-
-    <li class="card" key={i}>
-      <img src={{this.image}} class="card-img" alt={{this.title}} />
-      <h5 class="card-title">{{this.title}}</h5>
-      <div class="card-info">{{this.description}}</div>
-      <div class="card-footer">
-        <div>{{this.director}}</div>
-      </div>
-    </li>
-  </ul>
-
-{{/each}}
-</div>
+<h1>Title: {{movie.title}}</h1>
+<h3>Director: {{movie.director}}</h3>
+<img style="width: 600px" src="{{movie.image}}" alt="">

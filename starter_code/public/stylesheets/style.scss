@@ -1,8 +1,94 @@
 body {
-  padding: 50px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
 }
 
 a {
   color: #00B7FF;
+}
+
+.home-img {
+  padding: 0px;
+  min-height: -webkit-fill-available;
+  padding-top: 0rem;
+  position: fixed;
+}
+
+.home-title {
+  // z-index: 300;
+  color: white;
+  // right:  0rem:
+  transform: translate(10rem, -13rem);
+  font-weight: bold;
+  font-size:  84px;
+  display: flex;
+  margin: 0;
+  width: 10rem;
+
+  // flex-direction: column;
+  
+}
+
+.btn-all-movies {
+  // z-index: 300;
+  color: black;
+  // right:  0rem:
+  transform: translate(20rem, -3rem);
+  // font-weight: bold;
+  // font-size:  84px;
+  // display: flex;
+  margin: 0;
+  // width: 10rem;
+
+  // flex-direction: column;
+  outline: none;
+
+  border: none;
+}
+
+.btn-all-movies:focus {
+  outline: none;
+}
+
+.home-page {
+  background-image: url("/images/cinema.jpg");
+  // min-height: 100rem;
+  // position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-position: center;
+
+  /* Set rules to fill background */
+  min-height: 100%;
+  // min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// @media screen and (max-width: 1024px) { /* Specific to this particular image */
+//   .home-page {
+//     left: 10%;
+//     margin-left: -128px;   
+//     padding: 0px;
+//   }
+// }
+
+.table {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 4rem 3rem;
 }

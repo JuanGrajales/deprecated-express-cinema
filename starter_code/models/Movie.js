@@ -7,7 +7,8 @@ const movieSchema = new Schema({
     title: {type: String},
     director: String,
     // shorthand  ^ and regular version 
-    image: String
+    image: String,
+    description: String
 })
 
 const Movie = mongoose.model("Movie", movieSchema)
