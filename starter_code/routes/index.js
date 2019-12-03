@@ -1,7 +1,7 @@
 const express = require('express');
 const router  = express.Router();
 // import Movie model
-const Book = require('../models/Movie'); 
+const Movie = require('../models/Movie'); 
 
 /* GET home page */
 router.get('/', (req, res, next) => {
@@ -19,12 +19,13 @@ router.get('/add-new-movie', (req, res, next)=>{
   res.render('movie-views/newMovie');
 })
 
-router.post('/create-the-book', (req, res, next)=>{
+// // is this posting to the database
+router.post('/create-the-movie', (req, res, next)=>{
   let theTitle = req.body.newMovieTitle;
   let theDirector = req.body.newMovieDirector;
   let img = req.body.img;
 
-  Book.create({
+  Movie.create({
     title: theTitle,
     director: theDirector,
     image: img
