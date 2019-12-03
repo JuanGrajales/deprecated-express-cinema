@@ -19,4 +19,22 @@ router.get('/add-new-movie', (req, res, next)=>{
   res.render('movie-views/newMovie');
 })
 
+router.post('/create-the-book', (req, res, next)=>{
+  let theTitle = req.body.newMovieTitle;
+  let theDirector = req.body.newMovieDirector;
+  let img = req.body.img;
+
+  Book.create({
+    title: theTitle,
+    director: theDirector,
+    image: img
+  })
+  .then((response)=>{
+    res.redirect('/')
+  })
+  .catch((err)=>{
+    next(err)
+  })
+})
+
 module.exports = router;

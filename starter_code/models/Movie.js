@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 
 const movieSchema = new Schema({
     title: {type: String},
-    Director: String,
+    director: String,
     // shorthand  ^ and regular version 
     image: String
 })
